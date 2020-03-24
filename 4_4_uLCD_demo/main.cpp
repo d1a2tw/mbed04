@@ -4,7 +4,7 @@
 #include "uLCD_4DGL.h"
 
 uLCD_4DGL uLCD(D1, D0, D2); // serial tx, serial rx, reset pin;
-int color=0xFFFFFF;
+int color=0x000000;
 int main()
 {
     // basic printf demo = 16 by 18 characters on screen
