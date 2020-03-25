@@ -4,11 +4,10 @@
 #include "uLCD_4DGL.h"
 
 uLCD_4DGL uLCD(D1, D0, D2); // serial tx, serial rx, reset pin;
-int color=0x000000;
 int main()
 {
     // basic printf demo = 16 by 18 characters on screen
-    uLCD.background_color(color);
+    uLCD.background_color(0xFFFFFF);
     uLCD.color(BLUE);
     uLCD.printf("\n105061151\n"); //Default Green on black text
    

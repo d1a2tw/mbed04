@@ -10,14 +10,15 @@ int main()
       lcd.printf("105061151\n");
       while(true)
       {
-          x=30;
-          while(x>=0)
-          {
+
             led = !led;             // toggle led
             lcd.locate(5,1);
             lcd.printf("%5i",x);    //conuter display
-            wait(1);
-            x--;
-          }
+            wait(1);   
+            if(x>=0)
+              {
+              x--;  
+              }     
+            
       }
 }
